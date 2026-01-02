@@ -25,7 +25,8 @@ conn, addr = socket.accept()
 
 while True:
     data = conn.recv(1024) 
-    if not data: break 
+    if not data: 
+        break
     print ("New mensage from host %s: %s" % (addr, data.decode()))
 
 conn.close()
