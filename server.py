@@ -5,14 +5,14 @@ import socket
 socket = socket.socket(
     socket.AF_INET,
     socket.SOCK_STREAM) 
-HOST = str(input(f"What host do you want to test (leave empty for localhost): "))
-PORT = input(f"What port do you want acess: ")
+HOST = str(input("What host do you want to test (leave empty for localhost): "))
+PORT = input("What port do you want acess: ")
 
 if HOST == "":
     HOST = "127.0.0.1"
 
 if PORT == "":
-    Print("Port cannot be empty.")
+    print("Port cannot be empty.")
     exit(1)
 
 PORT = int(PORT)
